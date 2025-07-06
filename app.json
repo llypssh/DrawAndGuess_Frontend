@@ -1,0 +1,32 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/avatar-selector/avatar-selector",
+    "pages/index/index",
+    "pages/game/game",
+    "pages/draw/draw"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#667eea",
+    "navigationBarTitleText": "你画我猜",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#667eea",
+    "enablePullDownRefresh": false
+  },
+
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true,
+  "permission": {
+    "scope.userInfo": {
+      "desc": "你的用户信息将用于小程序体验"
+    }
+  },
+  "requiredBackgroundModes": [],
+  "sitemapLocation": "sitemap.json",
+  "style": "v2",
+  "lazyCodeLoading": "requiredComponents"
+}

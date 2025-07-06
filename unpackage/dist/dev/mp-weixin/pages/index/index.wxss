@@ -1,0 +1,354 @@
+
+.index-container {
+  min-height: 100vh;
+  background-color: #f6f6f6;
+  padding-bottom: 40rpx;
+}
+.custom-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #ffffff;
+  z-index: 100;
+  box-shadow: 0 2rpx 10rpx rgba(0, 0, 0, 0.1);
+}
+.navbar-content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 30rpx;
+}
+.logout-btn {
+  font-size: 28rpx;
+  color: blue;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+}
+.logout-btn::after {
+  display: none;
+}
+.header {
+  margin-top: 180rpx;
+  padding: 40rpx 30rpx;
+}
+.welcome-section {
+  text-align: center;
+}
+.welcome-title {
+  font-size: 48rpx;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20rpx;
+  display: block;
+}
+.welcome-subtitle {
+  font-size: 28rpx;
+  color: #666;
+  position: relative;
+  left: -200px;
+  top: -2px;
+}
+.quick-actions {
+  padding: 30rpx;
+  background-color: #fff;
+  border-radius: 20rpx;
+  margin: 30rpx;
+  box-shadow: 0 4rpx 16rpx rgba(0, 0, 0, 0.1);
+}
+.join-room-section {
+  margin-bottom: 20rpx;
+}
+.input-group {
+  display: flex;
+  gap: 20rpx;
+}
+.room-input {
+  flex: 1;
+  height: 80rpx;
+  background: #f5f5f5;
+  border-radius: 40rpx;
+  padding: 0 30rpx;
+  font-size: 28rpx;
+}
+.action-btn {
+  height: 80rpx;
+  border-radius: 40rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28rpx;
+  border: none;
+  padding: 0 40rpx;
+}
+.action-btn::after {
+  display: none;
+}
+.action-btn.primary {
+  background-color: #4CAF50;
+  color: #fff;
+}
+.action-btn.secondary {
+  background-color: #f5f5f5;
+  color: #333;
+  width: 100%;
+}
+.action-icon {
+  margin-right: 10rpx;
+  font-size: 32rpx;
+}
+.rooms-section {
+  margin: 30rpx;
+  background-color: #fff;
+  border-radius: 20rpx;
+  padding: 30rpx;
+  box-shadow: 0 4rpx 16rpx rgba(0, 0, 0, 0.1);
+}
+.section-header {
+  margin-bottom: 30rpx;
+}
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.header-text {
+  flex: 1;
+}
+.section-title {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #333;
+  display: block;
+}
+.section-subtitle {
+  font-size: 24rpx;
+  color: #999;
+  margin-top: 10rpx;
+  display: block;
+}
+.refresh-btn {
+  display: flex;
+  align-items: center;
+  background: #f5f5f5;
+  border: none;
+  border-radius: 20rpx;
+  padding: 10rpx 20rpx;
+  font-size: 24rpx;
+  color: #666;
+}
+.refresh-btn::after {
+  display: none;
+}
+.refresh-btn:disabled {
+  opacity: 0.6;
+}
+.refresh-icon {
+  margin-right: 8rpx;
+  font-size: 28rpx;
+}
+.refresh-text {
+  font-size: 24rpx;
+}
+.loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60rpx 0;
+}
+.loading-spinner {
+  width: 60rpx;
+  height: 60rpx;
+  border: 6rpx solid #f3f3f3;
+  border-top: 6rpx solid #4CAF50;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+0% { transform: rotate(0deg);
+}
+100% { transform: rotate(360deg);
+}
+}
+.loading-text {
+  margin-top: 20rpx;
+  font-size: 28rpx;
+  color: #999;
+}
+.room-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30rpx;
+  background: #f9f9f9;
+  border-radius: 16rpx;
+  margin-bottom: 20rpx;
+}
+.room-info {
+  flex: 1;
+}
+.room-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10rpx;
+}
+.room-name {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #333;
+  margin-right: 20rpx;
+}
+.room-status {
+  font-size: 24rpx;
+  padding: 4rpx 16rpx;
+  border-radius: 20rpx;
+}
+.room-status.waiting {
+  background-color: #E8F5E9;
+  color: #4CAF50;
+}
+.room-status.playing {
+  background-color: #FFF3E0;
+  color: #FF9800;
+}
+.room-details {
+  display: flex;
+  gap: 20rpx;
+}
+.player-count, .room-type {
+  font-size: 24rpx;
+  color: #666;
+}
+.room-action {
+  display: flex;
+  align-items: center;
+}
+.join-text {
+  font-size: 28rpx;
+  color: #4CAF50;
+  margin-right: 10rpx;
+}
+.join-text.disabled {
+  color: #999;
+}
+.arrow {
+  font-size: 36rpx;
+  color: #999;
+}
+.empty-state {
+  text-align: center;
+  padding: 60rpx 0;
+}
+.empty-icon {
+  font-size: 80rpx;
+  margin-bottom: 20rpx;
+  display: block;
+}
+.empty-text {
+  font-size: 32rpx;
+  color: #333;
+  margin-bottom: 10rpx;
+  display: block;
+}
+.empty-desc {
+  font-size: 24rpx;
+  color: #999;
+  display: block;
+}
+.features-section {
+  margin: 30rpx;
+  background-color: #fff;
+  border-radius: 20rpx;
+  padding: 30rpx;
+  box-shadow: 0 4rpx 16rpx rgba(0, 0, 0, 0.1);
+}
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20rpx;
+}
+.feature-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20rpx;
+}
+.feature-icon {
+  font-size: 48rpx;
+  margin-bottom: 10rpx;
+}
+.feature-text {
+  font-size: 24rpx;
+  color: #666;
+}
+.stats-section {
+  margin: 30rpx;
+  background-color: #fff;
+  border-radius: 20rpx;
+  padding: 30rpx;
+  box-shadow: 0 4rpx 16rpx rgba(0, 0, 0, 0.1);
+}
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20rpx;
+}
+.stat-item {
+  text-align: center;
+}
+.stat-number {
+  font-size: 36rpx;
+  font-weight: bold;
+  color: #333;
+  display: block;
+  margin-bottom: 10rpx;
+}
+.stat-label {
+  font-size: 24rpx;
+  color: #666;
+  display: block;
+}
+.login-prompt {
+  margin: 30rpx;
+  background-color: #fff;
+  border-radius: 20rpx;
+  padding: 40rpx 30rpx;
+  box-shadow: 0 4rpx 16rpx rgba(0, 0, 0, 0.1);
+}
+.prompt-content {
+  text-align: center;
+}
+.prompt-icon {
+  font-size: 64rpx;
+  margin-bottom: 20rpx;
+  display: block;
+}
+.prompt-title {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10rpx;
+  display: block;
+}
+.prompt-desc {
+  font-size: 24rpx;
+  color: #666;
+  margin-bottom: 30rpx;
+  display: block;
+}
+.prompt-btn {
+  background-color: #4CAF50;
+  color: #fff;
+  font-size: 28rpx;
+  border-radius: 40rpx;
+  width: 60%;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+.prompt-btn::after {
+  display: none;
+}
+
